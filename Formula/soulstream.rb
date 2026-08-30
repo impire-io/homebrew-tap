@@ -5,20 +5,20 @@
 class Soulstream < Formula
   desc "Your realm in one binary — the Soulstream node"
   homepage "https://github.com/impire-io/soulstream"
-  version "0.14.0-rc.8"
+  version "0.14.0-rc.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.8/soulstream_0.14.0-rc.8_darwin_amd64.tar.gz"
-      sha256 "a5b6abd04b4a1bed8d738d91835621a64b386228eb4287ae73cbff30bb665a9f"
+      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.9/soulstream_0.14.0-rc.9_darwin_amd64.tar.gz"
+      sha256 "f266ad5bad30eb30bfec65ac2a18d264d366572e81aa1411c8b73792df15ae5e"
 
       define_method(:install) do
         bin.install "soulstream"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.8/soulstream_0.14.0-rc.8_darwin_arm64.tar.gz"
-      sha256 "3710ba2d14b70b9c0594b5ca3d4f9fbe782b3f952eb74d9d759c3f5f2ffd272b"
+      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.9/soulstream_0.14.0-rc.9_darwin_arm64.tar.gz"
+      sha256 "6375a9f50ad377157622bee1000637c31d458722c57f0192318ac68891b35779"
 
       define_method(:install) do
         bin.install "soulstream"
@@ -28,15 +28,15 @@ class Soulstream < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.8/soulstream_0.14.0-rc.8_linux_amd64.tar.gz"
-      sha256 "9b6067d3ddf4c5e2ca78eff5db72588c6995844945067643b3241adb9ee64fec"
+      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.9/soulstream_0.14.0-rc.9_linux_amd64.tar.gz"
+      sha256 "5951681258373b97c91f32436da96d1970d137a0e55f8df6b601490aeab70f2e"
       define_method(:install) do
         bin.install "soulstream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.8/soulstream_0.14.0-rc.8_linux_arm64.tar.gz"
-      sha256 "ca92378e6e97e91a3bde73d1fca7ceff24b28effa63adaa35eecfee2d806d613"
+      url "https://github.com/impire-io/soulstream/releases/download/v0.14.0-rc.9/soulstream_0.14.0-rc.9_linux_arm64.tar.gz"
+      sha256 "33ff1250160042c6b75d54b609d99c2d65cddd38d245d5b5dee16c2e0e90fa4d"
       define_method(:install) do
         bin.install "soulstream"
       end
