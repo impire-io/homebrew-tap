@@ -5,12 +5,12 @@
 class Hits < Formula
   desc "Headless, agent-native issue tracking"
   homepage "https://github.com/impire-io/hits"
-  version "0.6.0-rc.1"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/impire-io/hits/releases/download/v0.6.0-rc.1/hits_0.6.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "8bb0b16171713c932194a1a969b502696f509484f81896dfd2268a9fd45939d6"
+      url "https://github.com/impire-io/hits/releases/download/v0.6.0/hits_0.6.0_darwin_amd64.tar.gz"
+      sha256 "e52beb3b58c2b99a08524e812730127a689e2a4031b605f7c0aa0c56243d2db1"
 
       define_method(:install) do
         bin.install "hits"
@@ -18,8 +18,8 @@ class Hits < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/impire-io/hits/releases/download/v0.6.0-rc.1/hits_0.6.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "c45e7e3dfc2ffe942bfbac940dd347692590865389744b70c136cda1a26ea381"
+      url "https://github.com/impire-io/hits/releases/download/v0.6.0/hits_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d396335e42467b518895f8bc8a64a7d9b01fbd31567d98e207ef38ed0e61b331"
 
       define_method(:install) do
         bin.install "hits"
@@ -30,16 +30,16 @@ class Hits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/hits/releases/download/v0.6.0-rc.1/hits_0.6.0-rc.1_linux_amd64.tar.gz"
-      sha256 "4f3e4e859e4528dd0490a7b5b2ca76e23406aa39619ef93c86bf28bf71100c65"
+      url "https://github.com/impire-io/hits/releases/download/v0.6.0/hits_0.6.0_linux_amd64.tar.gz"
+      sha256 "a584f6babc7f3eff2e87831d86bbeced283af90265291916ab538da5279414a6"
       define_method(:install) do
         bin.install "hits"
         bin.install "hits-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/hits/releases/download/v0.6.0-rc.1/hits_0.6.0-rc.1_linux_arm64.tar.gz"
-      sha256 "6b02e25be711d7eb8f1b5cfd607e84e2ab98d6a228a63b85a57cf3484fbf5148"
+      url "https://github.com/impire-io/hits/releases/download/v0.6.0/hits_0.6.0_linux_arm64.tar.gz"
+      sha256 "d97be94469b7cecbe5f8d36efa4408e69590ebacecfb09e5ec483373cce131fd"
       define_method(:install) do
         bin.install "hits"
         bin.install "hits-mcp"
