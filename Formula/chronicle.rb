@@ -5,12 +5,12 @@
 class Chronicle < Formula
   desc "Ops-logs as a product: tenant event logs with declared indexes, on NATS"
   homepage "https://github.com/impire-io/chronicle"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/impire-io/chronicle/releases/download/v0.2.0/chronicle_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a1c3757869ec4e499bbf643167119c45d6a5ab6dbafe6ff48c723304fe0b6add"
+      url "https://github.com/impire-io/chronicle/releases/download/v0.2.1/chronicle_0.2.1_darwin_amd64.tar.gz"
+      sha256 "ef127f2ed03b01509f3944edaddb3d00e138d438434fc387fbbf592bd5551383"
 
       define_method(:install) do
         bin.install "chronicle"
@@ -19,8 +19,8 @@ class Chronicle < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/impire-io/chronicle/releases/download/v0.2.0/chronicle_0.2.0_darwin_arm64.tar.gz"
-      sha256 "20b9ddb51900fa213c8ecce79a317befa9d1a7d6c9cb20caf04090cf1bb7fc09"
+      url "https://github.com/impire-io/chronicle/releases/download/v0.2.1/chronicle_0.2.1_darwin_arm64.tar.gz"
+      sha256 "409635c0930c8cf7edc5e7b4fd206b81b2814bf17e1fa2ade1c8893516b1bc3b"
 
       define_method(:install) do
         bin.install "chronicle"
@@ -32,8 +32,8 @@ class Chronicle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/chronicle/releases/download/v0.2.0/chronicle_0.2.0_linux_amd64.tar.gz"
-      sha256 "49dff9d45a099c8b73d0ae25e7cc816b1ff3201235850bb5d71de342af3fba0b"
+      url "https://github.com/impire-io/chronicle/releases/download/v0.2.1/chronicle_0.2.1_linux_amd64.tar.gz"
+      sha256 "fa8deef414c481eba7c2f552ddb702eccfa0a730084e57d92700132ec7cbee6f"
       define_method(:install) do
         bin.install "chronicle"
         bin.install "chronicle-node"
@@ -41,8 +41,8 @@ class Chronicle < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/chronicle/releases/download/v0.2.0/chronicle_0.2.0_linux_arm64.tar.gz"
-      sha256 "f30ae10b49e27dec724f7f4fbf4b5b013820cd9d7ec02f6f1a6054eb87a9528d"
+      url "https://github.com/impire-io/chronicle/releases/download/v0.2.1/chronicle_0.2.1_linux_arm64.tar.gz"
+      sha256 "e39acc83b0b26a3f36eea3bd111606e6a592422588cd6ab70af973384c56385b"
       define_method(:install) do
         bin.install "chronicle"
         bin.install "chronicle-node"
