@@ -5,20 +5,20 @@
 class ChronicleAgents < Formula
   desc "Humans and autonomous agents collaborating in rooms kept on chronicle"
   homepage "https://github.com/impire-io/chronicle-agents"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.1.1/chronicle-agents_0.1.1_darwin_amd64.tar.gz"
-      sha256 "e0fe8d17bce6cc5f4371522e4c2ca45a723db3cfad3dacfef286923fd03b58a9"
+      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.2.0/chronicle-agents_0.2.0_darwin_amd64.tar.gz"
+      sha256 "85a7ccb280562abd9b6fb9efe0ce551d1c98b2bb2040388bd83b35ff6dca1217"
 
       define_method(:install) do
         bin.install "chronicle-agents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.1.1/chronicle-agents_0.1.1_darwin_arm64.tar.gz"
-      sha256 "7cee590faf1c349ecfb7934c023c31bfacd833077b422fe91ee120fb1a801410"
+      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.2.0/chronicle-agents_0.2.0_darwin_arm64.tar.gz"
+      sha256 "b7052bd0a9c1eeccba9dddf886bc5a19448dfc1d9d0b2dd1241b36ccfad5cad3"
 
       define_method(:install) do
         bin.install "chronicle-agents"
@@ -28,15 +28,15 @@ class ChronicleAgents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.1.1/chronicle-agents_0.1.1_linux_amd64.tar.gz"
-      sha256 "f30f53d26d5281542847816cda737cf4b640721dbb9ff1efcdd83f3cc902b22b"
+      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.2.0/chronicle-agents_0.2.0_linux_amd64.tar.gz"
+      sha256 "2703d0b08ec20ff0ad60e6adf2922b1e0046921e041e759a9717f909f657cbff"
       define_method(:install) do
         bin.install "chronicle-agents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.1.1/chronicle-agents_0.1.1_linux_arm64.tar.gz"
-      sha256 "731979dd4a7320dcb788acb5f4c7ffd7ef61fc25d79c0807c2d26c842e580e54"
+      url "https://github.com/impire-io/chronicle-agents/releases/download/v0.2.0/chronicle-agents_0.2.0_linux_arm64.tar.gz"
+      sha256 "ce3bc5e43627004e85b200992dd04b4631eca480d93af29857d2bac62ff1acf0"
       define_method(:install) do
         bin.install "chronicle-agents"
       end
